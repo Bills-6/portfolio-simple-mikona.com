@@ -1,3 +1,15 @@
 @media only screen and (width >= 921px) {
 	i.icon-nav { display: none; }
 }
+#hamburger-button > .bar { transition: all .3s; }
+#hamburger-button.isActive .bar:first-child {
+	rotate: 40deg;
+	transform-origin: 0 100%;
+}
+#hamburger-button.isActive .bar:nth-child(2) {
+	scale: 0;
+}
+#hamburger-button.isActive .bar:last-child {
+	rotate: -40deg;
+	transform-origin: 3px 0;
+}
