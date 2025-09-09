@@ -12,11 +12,11 @@
   </head>
 </head>
 <body>
-	<div class="container mx-auto bg-blue-300 lg:px-10 relative">
-		<nav class="h-[80px] bg-orange-200 flex items-center justify-between relative px-5 lg:px-7">
+	<div class="container mx-auto lg:px-10 relative">
+		<nav class="h-[80px] flex items-center justify-between relative px-5 lg:px-7 overflow-hidden">
 			<a href="#logo" class="font-bold text-[1.3rem] md:text-[1.5rem]">Lucas</a>
 
-			<ul class="nav-list absolute top-0 right-0 z-1 w-[90vw] h-screen bg-zinc-700 flex flex-col items-center justify-center gap-4 lg:flex-row lg:justify-between lg:static lg:h-fit lg:w-fit lg:bg-[unset]">
+			<ul class="nav-list absolute top-0 right-[-200%] z-1 w-[90vw] h-screen bg-zinc-700 flex flex-col items-center justify-center gap-4 lg:flex-row lg:justify-between lg:static lg:h-fit lg:w-fit lg:bg-[unset]">
 				<li class="nav-item w-full flex items-center gap-3 p-3 px-5 text-gray-100 hover:bg-gray-200 hover:text-zinc-800 hover:cursor-pointer lg:hover:bg-[unset] lg:hover:text-[unset] lg:text-[unset] lg:block">
 					<i class="icon-nav material-symbols-outlined">work</i>
 					<a class="nav-link tracking-widest" href="#">Portfolio</a>
@@ -35,10 +35,10 @@
 				</li>
 			</ul>
 
-			<a class="" href="#register-button"></a>
+			<a class="border-1 border-zinc-900 px-8 py-3 rounded-[3rem] hover:bg-zinc-900 hover:text-zinc-100 font-bold" href="#register-button">Register</a>
 		</nav>
 
-		<div class="absolute z-20 top-[22px] right-[22px] w-[30px] h-[20px] flex flex-col justify-between group hover:cursor-pointer" id="hamburger-button">
+		<div class="absolute z-20 top-[22px] right-[22px] w-[30px] h-[20px] flex flex-col justify-between group hover:cursor-pointer lg:hidden" id="hamburger-button">
 			<span class="bar h-[2px] bg-gray-900 group-hover:bg-gray-700"></span>
 			<span class="bar h-[2px] bg-gray-900 group-hover:bg-gray-700"></span>
 			<span class="bar h-[2px] bg-gray-900 group-hover:bg-gray-700"></span>
