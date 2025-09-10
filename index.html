@@ -16,7 +16,7 @@
 		<nav class="h-[80px] flex items-center justify-between relative px-5 lg:px-7">
 			<a href="#logo" class="font-bold text-[1.3rem] md:text-[1.5rem]">Lucas</a>
 
-			<ul class="nav-list absolute top-0 right-[-200%] z-1 w-[90vw] h-screen bg-zinc-700 flex flex-col items-center justify-center gap-4 lg:flex-row lg:justify-between lg:static lg:h-fit lg:w-fit lg:bg-[unset] transition-[right]" aria-expanded="false" id="nav-list">
+			<ul class="nav-list absolute top-0 right-[-200%] z-100 w-[90vw] h-screen bg-zinc-700 flex flex-col items-center justify-center gap-4 lg:flex-row lg:justify-between lg:static lg:h-fit lg:w-fit lg:bg-[unset] transition-[right]" aria-expanded="false" id="nav-list">
 				<li class="nav-item w-full flex items-center gap-3 p-3 px-5 text-gray-100 hover:bg-gray-200 hover:text-zinc-800 hover:cursor-pointer lg:hover:bg-[unset] lg:hover:text-[unset] lg:text-[unset] lg:block">
 					<i class="icon-nav material-symbols-outlined">work</i>
 					<a class="nav-link tracking-widest" href="#">Portfolio</a>
@@ -38,15 +38,15 @@
 			<a class="border-1 border-zinc-900 px-8 py-3 rounded-[3rem] hover:bg-zinc-900 hover:text-zinc-100 font-bold me-auto ms-10 lg:ms-[unset] lg:me-[unset]" href="#register-button">Register</a>
 		</nav>
 
-		<div class="absolute z-20 top-[22px] right-[22px] w-[30px] h-[20px] flex flex-col justify-between group hover:cursor-pointer lg:hidden" id="hamburger-button">
+		<div class="absolute z-200 top-[22px] right-[22px] w-[30px] h-[20px] flex flex-col justify-between group hover:cursor-pointer lg:hidden" id="hamburger-button">
 			<span class="bar h-[2px] bg-gray-900 group-hover:bg-gray-700"></span>
 			<span class="bar h-[2px] bg-gray-900 group-hover:bg-gray-700"></span>
 			<span class="bar h-[2px] bg-gray-900 group-hover:bg-gray-700"></span>
 		</div>
 
 		<section class="relative lg:h-[90vh]" id="hero-page">
-			<div class="gradient absolute w-full h-full left-0 top-0 -z-1 bg-gradient-to-r from-blue-500 to-orange-300"></div>
-			<div class="flex flex-col lg:flex-row items-center gap-5 relative z-1 bg-zinc-100/90 backdrop-blur-md h-full">
+			<div class="gradient absolute w-full h-full left-0 top-0 -z-1 bg-gradient-to-r from-blue-500 to-orange-300 inset-ring-3 inset-ring-zinc-100"></div>
+			<div class="flex flex-col lg:flex-row items-center gap-5 relative z-1 bg-zinc-100/85 backdrop-blur-md h-full">
 				<div class="content w-full lg:w-[50%] px-5 lg:px-7">
 				<span class="relative mx-auto lg:mx-[unset] after:content-[''] after:absolute after:w-[40px] after:h-[2px] after:bg-zinc-900 after:top-[50%] after:transition-y-[-50%] after:left-[-20px] block w-fit mb-5">
 					<small class="uppercase ms-6 lg:ms-10">20 CITES AND GROWING</small>
@@ -54,13 +54,19 @@
 				<h1 class="font-bold text-[2rem] lg:text-[4rem] mb-5">Being founders Takes guts</h1>
 				<p class="text mb-3 lg:mb-10">Knowing your risk tolerance can serve as an internal compass, guiding your business growth decisions.</p>
 				<div class="cta flex flex-col md:flex-row gap-5 items-center">
-					<a class="flex items-center justify-center w-full h-[60px] border-1 border-zinc-900 bg-zinc-900 rounded-full text-zinc-100 hover:bg-zinc-800 md:w-[200px]" href="#">Book Demo</a>
+					<a class="flex items-center justify-center w-full h-[80px] border-1 border-zinc-900 bg-zinc-900 rounded-full text-zinc-100 hover:bg-zinc-800 md:w-[200px] lg:w-[300px]" href="#">Book Demo</a>
 					<div class="flex gap-5 items-center w-full">
-						<span class="flex items-center justify-center w-[60px] h-[60px] bg-zinc-900 rounded-full hover:bg-zinc-800 hover:cursor-pointer">
+						<span class="flex items-center justify-center w-[60px] h-[60px] bg-zinc-900 rounded-full hover:bg-zinc-800 hover:cursor-pointer lg:w-[80px] lg:h-[80px]">
 							<i class="material-symbols-outlined text-zinc-100 pointer-events-none">play_arrow</i>
 						</span>
 						<span class="font-semibold text-lg">Watch Showree!</span>
 					</div>
+				</div>
+			</div>
+
+			<div class="hero-image w-full lg:w-[50%] lg:h-full flex">
+				<div class="image-wrapper p-7 border-1 rounded-[10rem] w-[70%] m-auto lg:w-[50%]">
+					<img class="rounded-[10rem]" src="/hero-image.jpg" alt="">
 				</div>
 			</div>
 			</div>
