@@ -7,13 +7,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=7">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="style.css" />
   </head>
 </head>
 <body>
 	<div class="container mx-auto lg:px-10 relative">
-		<nav class="h-[80px] flex items-center justify-between relative px-5 lg:px-7 ">
+		<nav class="h-[80px] flex items-center justify-between relative px-5 lg:px-7">
 			<a href="#logo" class="font-bold text-[1.3rem] md:text-[1.5rem]">Lucas</a>
 
 			<ul class="nav-list absolute top-0 right-[-200%] z-1 w-[90vw] h-screen bg-zinc-700 flex flex-col items-center justify-center gap-4 lg:flex-row lg:justify-between lg:static lg:h-fit lg:w-fit lg:bg-[unset] transition-[right]" aria-expanded="false" id="nav-list">
@@ -43,6 +43,25 @@
 			<span class="bar h-[2px] bg-gray-900 group-hover:bg-gray-700"></span>
 			<span class="bar h-[2px] bg-gray-900 group-hover:bg-gray-700"></span>
 		</div>
+
+		<section class="py-20 bg-blue-400 flex flex-col gap-5 lg:flex-row" id="hero-page">
+			<div class="content w-full lg:w-[50%] bg-yellow-200 px-5 lg:px-7">
+				<span class="relative mx-auto lg:mx-[unset] after:content-[''] after:absolute after:w-[40px] after:h-[2px] after:bg-zinc-900 after:top-[50%] after:transition-y-[-50%] after:left-[-20px] block w-fit mb-5">
+					<small class="uppercase ms-6 lg:ms-10">20 CITES AND GROWING</small>
+				</span>
+				<h1 class="font-bold text-[2rem] lg:text-[4rem] mb-5">Being founders Takes guts</h1>
+				<p class="text mb-3 lg:mb-10">Knowing your risk tolerance can serve as an internal compass, guiding your business growth decisions.</p>
+				<div class="cta flex flex-col md:flex-row gap-5 items-center">
+					<a class="flex items-center justify-center w-full h-[60px] border-1 border-zinc-900 bg-zinc-900 rounded-full text-zinc-100 hover:bg-zinc-800 md:w-[200px]" href="#">Book Demo</a>
+					<div class="flex gap-5 items-center w-full">
+						<span class="flex items-center justify-center w-[60px] h-[60px] bg-zinc-900 rounded-full hover:bg-zinc-800 hover:cursor-pointer">
+							<i class="material-symbols-outlined text-zinc-100 pointer-events-none">play_arrow</i>
+						</span>
+						<span class="font-semibold text-lg">Watch Showree!</span>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 	<script type="module" src="components/hamburger.js"></script>
 </body>

@@ -13,3 +13,14 @@
 	rotate: -40deg;
 	transform-origin: 3px 0;
 }
+
+.text {
+	font-size: 1.1rem;
+	line-height: 1.8;
+}
+@media only screen and (width >= 992px) {
+	.text {
+		font-size: 1.2rem;
+		line-height: 2.1;
+	}
+}
