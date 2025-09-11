@@ -7,6 +7,16 @@ hamburgerButton.addEventListener("click", function() {
 	} else callNav("closed");
 });
 
+// close nav if user click is not on target
+document.addEventListener("click", function(e) {
+	if (!navbarList.contains(e.target) && !hamburgerButton.contains(e.target)) callNav("close");
+});
+
+// close nav if user click esc button on keyboard
+document.addEventListener("keydown", function(isKey) {
+	if (isKey.key === "Escape") callNav("close");
+});
+
 const bars = document.querySelectorAll("#hamburger-button .bar");
 function callNav(e) {
 	if (e === "open") {
